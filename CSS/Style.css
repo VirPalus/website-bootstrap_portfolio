@@ -1,0 +1,111 @@
+:root{
+    --Black: rgba(25, 25, 25, 1);
+    --Gray: rgba(75, 75, 75, 1);
+    --White: rgba(225, 225, 225, 1);
+    --accentColor: rgba(230, 175, 60, 1);
+    --thomasmoreColor: rgba(250, 100, 50, 1);
+    --DotNetColor: rgb(170, 90, 170);
+    --UnrealColor: rgba(0, 160, 230, 1);
+    --BackgroundColor: rgba(0, 0, 0, 0.35);
+    --textColor: rgba(225, 225, 225, 1);
+    --BorderColor: rgba(255, 255, 255, 0.07);
+    --LineColor: rgba(255, 255, 255, 0.5);
+    --drop: 0 10px 25px rgba(0, 0, 0, 0.6);
+    --fontLogo: "Courier New", monospace, Helvetica, Arial, sans-serif;
+}
+
+body{
+    background-color: rgba(25, 25, 25, 1);
+    background-image: url("../IMG/background.avif");
+}
+
+p{
+  margin: 0;
+}
+
+a{
+  position: relative;
+  color: inherit;
+  text-decoration: none;
+  transition: color .2s ease;
+}
+
+a::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 2px;
+  background: var(--accentColor);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform .2s ease;
+}
+
+a:hover::after{
+  transform: scaleX(1);
+}
+
+.navBarLogo::after,
+.text-white::after,
+.btn::after{
+  display: none;
+}
+
+hr{
+    color: var(--LineColor);
+    height: 5px;
+}
+
+.logo{
+    color: var(--accentColor);
+    font-family: var(--fontLogo);
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+#logoHover{
+    opacity: 1;
+    transition: opacity .2s ease;
+}
+
+#logoHover:hover{
+    opacity: 0.5;
+}
+
+.paragraphLabel{
+    color: var(--Gray);
+    font-size: .95rem;
+    line-height: 1.6;
+}
+
+.bg-dark{
+    background-color: var(--Black) !important;
+}
+
+.navbar-dark{
+    border-bottom: 1px solid var(--BorderColor) !important;
+}
+
+.bi{
+    font-size: 1.25rem;
+    transition: color .2s ease;
+}
+
+.bi:hover{
+    color: var(--accentColor);
+}
+
+.contact-line{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 0 0 0.5rem 0; 
+}
+
+footer {
+background-color: var(--BackgroundColor);
+color: var(--textColor);
+padding: 3rem 0;
+}
