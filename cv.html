@@ -21,11 +21,11 @@
 <body class="d-flex flex-column min-vh-100">
     <header id="navbar"></header>
 
-    <main class="flex-grow-1">
-        <div class="container my-4 my-lg-5">
+    <main class="flex-grow-1 overflow-x-hidden">
+        <div class="container my-3">
 
             <section class="mb-4 mb-lg-5">
-                <div class="p-4 p-md-5 text-bg-dark rounded-4">
+                <div class="p-4 p-md-5 text-bg-dark rounded-4 overflow-hidden">
                     <div class="row g-4 align-items-center">
                         <div class="col-12 col-lg-8">
                             <p class="label mb-2">Curriculum Vitae</p>
@@ -42,12 +42,12 @@
 
                                 <a href="mailto:mario-moerman@hotmail.com" class="contact-link d-inline-flex align-items-center gap-2 mt-1 text-decoration-none">
                                     <i class="bi bi-envelope-at-fill"></i>
-                                    <span>mario-moerman@hotmail.com</span>
+                                    <span class="text-break">mario-moerman@hotmail.com</span>
                                 </a>
 
                                 <a href="https://www.google.com/maps/search/?api=1&query=Leuvensesteenweg+485+bus+201+2812+Muizen" target="_blank" rel="noopener noreferrer" class="contact-link d-inline-flex align-items-center gap-2 mt-1 text-decoration-none">
                                     <i class="bi bi-geo-alt-fill"></i>
-                                    <span>Leuvensesteenweg 485 bus 201, 2812 Muizen</span>
+                                    <span class="text-break">Leuvensesteenweg 485 bus 201, 2812 Muizen</span>
                                 </a>
                             </div>
 
@@ -63,7 +63,7 @@
                             </div>
                         </div>
 
-                        <div class="col-12 col-lg-4 text-center">
+                        <div class="col-12 col-md-6 col-lg-4 text-center">
                             <img src="IMG/marioMoerman.jpg" alt="Mario Moerman" class="img-fluid rounded-4 lgPhoto">
                         </div>
                     </div>
@@ -71,7 +71,7 @@
             </section>
 
             <section class="mb-4 mb-lg-5">
-                <div class="p-4 p-md-5 text-bg-dark rounded-4">
+                <div class="p-4 p-md-5 text-bg-dark rounded-4 overflow-hidden">
                     <p class="label mb-2">Profiel</p>
                     <h2 class="mb-4">Over mezelf</h2>
 
@@ -106,7 +106,7 @@
             <section class="mb-4 mb-lg-5">
                 <div class="row g-4">
                     <div class="col-12 col-lg-4">
-                        <div class="p-4 text-bg-dark rounded-4 h-100">
+                        <div class="p-4 text-bg-dark rounded-4 h-100 overflow-hidden">
                             <p class="label mb-2">Werkervaring</p>
                             <h3 class="mb-4">Ervaring</h3>
 
@@ -125,7 +125,7 @@
                     </div>
 
                     <div class="col-12 col-lg-4">
-                        <div class="p-4 text-bg-dark rounded-4 h-100">
+                        <div class="p-4 text-bg-dark rounded-4 h-100 overflow-hidden">
                             <p class="label mb-2">Academische achtergrond</p>
                             <h3 class="mb-4">Diploma's &amp; Certificaten</h3>
 
@@ -144,17 +144,17 @@
                     </div>
 
                     <div class="col-12 col-lg-4">
-                        <div class="p-4 text-bg-dark rounded-4 h-100">
+                        <div class="p-4 text-bg-dark rounded-4 h-100 overflow-hidden">
                             <p class="label mb-2">Referentie</p>
                             <h3 class="mb-4">Contactpersoon</h3>
 
-                            <p class="mb-1">James Vanderhaeghen | CEO Becosteel</p>
+                            <p class="mb-1 text-break">James Vanderhaeghen | CEO Becosteel</p>
 
                             <div class="mb-1">
                                 <a href="mailto:james.v@becosteel.be"
                                 class="contact-link d-inline-flex align-items-center gap-2 mt-1 text-decoration-none">
                                     <i class="bi bi-envelope-at-fill"></i>
-                                    <span>james.v@becosteel.be</span>
+                                    <span class="text-break">james.v@becosteel.be</span>
                                 </a>
                             </div>
 
@@ -189,14 +189,15 @@
             </section>
 
             <section class="mb-4 mb-lg-5">
-                <div class="p-4 p-md-5 text-bg-dark rounded-4">
+                <div class="p-4 p-md-5 text-bg-dark rounded-4 overflow-hidden">
                     <p class="label d-flex flex-column align-items-center mb-4">Technische vaardigheden</p>
-                    <div class="d-flex align-items-stretch gap-3">
-                        <button class="btn text-white border-0 shadow-none p-0 swiper-button-prev position-static m-0 align-self-center">
+
+                    <div class="d-flex flex-column flex-md-row align-items-stretch gap-3">
+                        <button class="btn text-white border-0 shadow-none p-0 swiper-button-prev position-static m-0 align-self-center align-self-md-center">
                             <i class="bi bi-arrow-left-circle-fill fs-2"></i>
                         </button>
 
-                        <div class="swiper skillSwiper flex-grow-1">
+                        <div class="swiper skillSwiper flex-grow-1 w-100">
                             <div class="swiper-wrapper">
 
                                 <div class="swiper-slide h-100">
@@ -282,7 +283,7 @@
                             </div>
                         </div>
 
-                        <button class="btn text-white border-0 shadow-none p-0 swiper-button-next position-static m-0 align-self-center">
+                        <button class="btn text-white border-0 shadow-none p-0 swiper-button-next position-static m-0 align-self-center align-self-md-center">
                             <i class="bi bi-arrow-right-circle-fill fs-2"></i>
                         </button>
                     </div>
@@ -294,29 +295,26 @@
 
     <footer id="footer" class="mt-auto"></footer>
 
+    <script src="JS/App.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script >
-        fetch("navbar.html").then(r => r.text()).then(h => navbar.innerHTML = h);
-        fetch("footer.html").then(r => r.text()).then(h => footer.innerHTML = h);
-
+    <script>
         new Swiper(".skillSwiper", {
-            loop: true,
-            spaceBetween: 24,
-            slidesPerView: 1,
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev"
+        loop: true,
+        spaceBetween: 24,
+        slidesPerView: 1,
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev"
+        },
+        breakpoints: {
+            768: {
+                slidesPerView: 2
             },
-            breakpoints: {
-                768: {
-                    slidesPerView: 2
-                },
-                992: {
-                    slidesPerView: 3
-                }
+            992: {
+                slidesPerView: 3
             }
-        });
+        }
+    });
     </script>
-
 </body>
 </html>

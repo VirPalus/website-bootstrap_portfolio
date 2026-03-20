@@ -17,8 +17,8 @@
 <body class="d-flex flex-column min-vh-100">
     <header id="navbar"></header>
 
-    <main class="flex-grow-1">
-        <div class="container mx-auto my-3">
+    <main class="flex-grow-1 overflow-x-hidden">
+        <div class="container my-3">
             <section>
                 <div class="p-4 p-md-5 text-bg-dark rounded-4 w-100">
                     <p class="label">Ervaring</p>
@@ -91,9 +91,6 @@
 
     <footer id="footer" class="mt-auto"></footer>
 
-    <script>
-        fetch("navbar.html").then(r => r.text()).then(h => navbar.innerHTML = h);
-        fetch("footer.html").then(r => r.text()).then(h => footer.innerHTML = h);
-    </script>
+    <script src="JS/App.js"></script>
 </body>
 </html>

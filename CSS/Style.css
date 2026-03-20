@@ -145,9 +145,16 @@ hr{
     background: var(--BackgroundColor)!important;
     box-shadow: var(--drop)!important;
 }
+#navbar{
+    margin-bottom: 60px;
+}
 
 .navbar-dark{
     border-bottom: 1px solid var(--BorderColor)!important;
+    min-height: 60px!important;
+    position: fixed!important;
+    width: 100%!important;
+    z-index: 1!important;
 }
 
 .navbar-toggler{

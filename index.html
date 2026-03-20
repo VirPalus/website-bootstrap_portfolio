@@ -14,17 +14,21 @@
     <link rel="stylesheet" href="CSS/Style.css" />
     <title>Mario Moerman | Home</title>
 </head>
+
 <body class="d-flex flex-column min-vh-100">
     <header id="navbar"></header>
-    <main class="flex-grow-1">
-        <div class="container mx-auto my-3">
 
-            <section>
-                <div class="p-4 p-md-5 text-bg-dark rounded-4 w-100">
-                    <div class="row align-items-center g-3">
+    <main class="flex-grow-1 overflow-x-hidden">
+        <div class="container my-3">
 
-                        <div class="col-lg-8">
-                            <p class="label">.NET-SOFTWARE | WEBPLATFORMEN | UNREAL ENGINE GAMEONTWIKKELING</p>
+            <section class="mb-4">
+                <div class="p-4 p-md-5 text-bg-dark rounded-4 overflow-hidden">
+                    <div class="row align-items-center g-3 justify-content-center">
+
+                        <div class="col-12 col-lg-8">
+                            <p class="label text-break mb-2">
+                                .NET-SOFTWARE | WEBPLATFORMEN | UNREAL ENGINE GAMEONTWIKKELING
+                            </p>
                             <h1>Welkom,</h1>
 
                             <p>
@@ -51,12 +55,12 @@
                             </p>
                         </div>
 
-                        <div class="col-lg-2 text-center">
+                        <div class="col-12 col-lg-2 text-center">
                             <img src="IMG/marioMoerman.jpg" alt="Mario Moerman" class="img-fluid rounded-4 lgPhoto" />
                         </div>
 
-                        <div class="col-lg-auto d-flex flex-column justify-content-center align-items-center text-center">
-                            <p class="label">HELLO I'M MARIO</p>
+                        <div class="col-12 col-lg text-center">
+                            <p class="label mb-2">HELLO I'M MARIO</p>
                             <h3>Over Mij</h3>
                             <a href="overmij.html">Lees meer →</a>
                         </div>
@@ -64,13 +68,14 @@
                     </div>
                 </div>
             </section>
-            <section>
+
+            <section class="mb-4">
                 <div class="row g-4">
 
                     <div class="col-12 col-lg-4">
                         <div class="p-4 text-bg-dark rounded-4 h-100">
                             <div class="card h-100 bg-transparent text-white border-0">
-                                <img src="IMG/csharpDotNet.png" class="card-img-top" alt=".Net">
+                                <img src="IMG/csharpDotNet.png" class="card-img-top img-fluid" alt=".Net">
                                 <div class="card-body d-flex flex-column justify-content-between">
                                     <p class="label">.NET</p>
                                     <p class="card-text">
@@ -84,10 +89,11 @@
                             </div>
                         </div>
                     </div>
+
                     <div class="col-12 col-lg-4">
                         <div class="p-4 text-bg-dark rounded-4 h-100">
                             <div class="card h-100 bg-transparent text-white border-0">
-                                <img src="IMG/conquerorLogo.png" class="card-img-top" alt="Unreal">
+                                <img src="IMG/conquerorLogo.png" class="card-img-top img-fluid" alt="Unreal">
                                 <div class="card-body d-flex flex-column justify-content-between">
                                     <p class="label">Unreal Engine</p>
                                     <p class="card-text">
@@ -101,28 +107,31 @@
                             </div>
                         </div>
                     </div>
+
                     <div class="col-12 col-lg-4">
                         <div class="p-4 text-bg-dark rounded-4 h-100">
                             <div class="card h-100 bg-transparent text-white border-0">
-                                <img src="IMG/becosteelLogo.png" class="card-img-top" alt="Ervaring">
+                                <img src="IMG/becosteelLogo.png" class="card-img-top img-fluid" alt="Ervaring">
                                 <div class="card-body d-flex flex-column justify-content-between">
                                     <p class="label">Ervaring</p>
                                     <p class="card-text">
                                         Professionele ervaring en vaardigheden, opgebouwd binnen functies waarin verantwoordelijkheid, nauwkeurigheid en zelfstandigheid centraal stonden.
                                     </p>
 
-                                    <div class="text-center mt-3 ">
+                                    <div class="text-center mt-3">
                                         <a href="#" class="btn-accent">Lees meer</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+
                 </div>
             </section>
+
             <section>
-                <div class="p-4 text-bg-dark rounded-4 w-100">
-                    <p class="label d-flex flex-column align-items-center">Tech Stack</p>
+                <div class="p-4 text-bg-dark rounded-4 overflow-hidden">
+                    <p class="label text-center mb-4">Tech Stack</p>
 
                     <div class="row g-3 text-center">
 
@@ -178,14 +187,10 @@
                     </div>
                 </div>
             </section>
+
         </div>
     </main>
 
     <footer id="footer" class="mt-auto"></footer>
-
-    <script>
-        fetch("navbar.html").then(r => r.text()).then(h => navbar.innerHTML = h);
-        fetch("footer.html").then(r => r.text()).then(h => footer.innerHTML = h);
-    </script>
-</body>
+    <script src="JS/App.js"></script>
 </html>
