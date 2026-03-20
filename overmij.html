@@ -1,18 +1,22 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="nl">
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <link rel="icon" type="image/png" href="FAVICON/favicon-96x96.png" sizes="96x96" />
     <link rel="icon" type="image/svg+xml" href="FAVICON/favicon.svg" />
     <link rel="shortcut icon" href="FAVICON/favicon.ico" />
     <link rel="apple-touch-icon" sizes="180x180" href="FAVICON/apple-touch-icon.png" />
     <link rel="manifest" href="FAVICON/site.webmanifest" />
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
     <link rel="stylesheet" href="CSS/Style.css" />
-    <title>Mario Moerman | Home</title>
+
+    <title>Mario Moerman | Over Mij</title>
 </head>
 <body class="d-flex flex-column min-vh-100">
     <header id="navbar"></header>
@@ -20,11 +24,249 @@
     <main class="flex-grow-1 overflow-x-hidden">
         <div class="container my-3">
 
+            <section class="mb-4 mb-lg-5">
+                <div class="p-4 p-md-5 text-bg-dark rounded-4 overflow-hidden">
+                    <p class="label mb-2">Persoonlijk</p>
+                    <h1 class="mb-4">Mijn interesses</h1>
+
+                    <p>
+                        Programmeren is voor mij meer dan alleen een studierichting. Ik ben sterk geïnteresseerd in hoe systemen zijn opgebouwd,
+                        hoe ze presteren onder belasting en hoe je ze stap voor stap kunt verbeteren tot iets dat stabiel, efficiënt en schaalbaar is.
+                    </p>
+                    <br>
+                    <p>
+                        Die interesse zie je terug in verschillende domeinen. Binnen softwareontwikkeling trek ik vooral naar gestructureerde logica,
+                        duidelijke architectuur en technische correctheid. Binnen gameontwikkeling ligt mijn focus sterk op gameplay, systems design,
+                        multiplayerlogica en het uitwerken van mechanics die echt goed aanvoelen in het spel.
+                    </p>
+                    <br>
+                    <p>
+                        Daarnaast ben ik ook veel bezig met hardware, performantie en optimalisatie. Ik analyseer graag hoe verschillende onderdelen
+                        samenwerken, waar bottlenecks ontstaan en hoe je met gerichte keuzes een systeem beter, stabieler en consistenter kunt maken.
+                        Diezelfde manier van denken neem ik ook mee in mijn programmeerwerk.
+                    </p>
+                    <br>
+                    <p>
+                        Wat mij het meest motiveert, is het gevoel dat je iets concreets aan het bouwen bent: een website, een tool, een game system
+                        of een volledige spelervaring. Ik werk het liefst aan projecten waar techniek en creativiteit samenkomen en waar je duidelijk
+                        kunt zien hoe een idee stap voor stap verandert in een werkend resultaat.
+                    </p>
+                </div>
+            </section>
+
+            <section class="mb-4 mb-lg-5">
+                <div class="row g-4">
+                    <div class="col-12 col-lg-8">
+                        <div class="p-4 p-md-5 text-bg-dark rounded-4 h-100 overflow-hidden">
+                            <p class="label mb-2">Hobby’s & interesses</p>
+                            <h2 class="mb-4">Waar mijn passie ligt</h2>
+
+                            <div id="interessesCarousel" class="carousel slide">
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#interessesCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                    <button type="button" data-bs-target="#interessesCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                </div>
+
+                                <div class="carousel-inner rounded-4 overflow-hidden">
+
+                                    <div class="carousel-item active">
+                                        <img src="IMG/gameDevelopment.png" class="d-block w-100 img-fluid" alt="Gameplay mechanics en systems">
+                                        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-75 rounded-4 p-3">
+                                            <h5>Gameplay, Mechanics &amp; Systems</h5>
+                                            <p class="mb-0 small-text">
+                                                Wat mij aantrekt in game development is gameplay ontwerpen vanuit het standpunt van de speler, 
+                                                zodat het niet alleen technisch klopt, maar ook goed aanvoelt om te spelen.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="carousel-item">
+                                        <img src="IMG/programmingSetup.png" class="d-block w-100 img-fluid" alt="Applicaties, API's en databases">
+                                        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-75 rounded-4 p-3">
+                                            <h5>Applicaties, API’s &amp; Databases</h4>
+                                            <p class="mb-0 small-text">
+                                                Wat mij aantrekt in softwareontwikkeling is het bouwen van logische en duidelijke systemen, 
+                                                in C# en .NET tot ontwikkelen van mijn eigen project Nodal, waarin ik een visuele code editor ontwikkel op basis van nodes.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <button class="carousel-control-prev" type="button" data-bs-target="#interessesCarousel" data-bs-slide="prev">
+                                    <span aria-hidden="true"> <i class="bi bi-arrow-left-circle-fill fs-2"></i></span>
+                                    <span class="visually-hidden">Vorige</span>
+                                </button>
+
+                                <button class="carousel-control-next" type="button" data-bs-target="#interessesCarousel" data-bs-slide="next">
+                                    <span aria-hidden="true"><i class="bi bi-arrow-right-circle-fill fs-2"></i></span>
+                                    <span class="visually-hidden">Volgende</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-4 d-flex">
+                        <div class="d-flex flex-column gap-5 h-100 ">
+                            <div class="p-4 text-bg-dark rounded-4 overflow-hidden flex-fill d-flex flex-column justify-content-around">
+                                <p class="label mb-0 text-center">Waarom ik dit graag doe</p>
+                                <p class="mb-0">
+                                    Begrijpen hoe iets werkt, het logisch opbouwen en daarna blijven verbeteren tot het technisch sterk is.
+                                </p>
+                            </div>
+
+                            <div class="p-4 text-bg-dark rounded-4 overflow-hidden flex-fill d-flex flex-column justify-content-around">
+                                <p class="label mb-0 text-center">Hoe ik het liefst leer</p>
+                                <p class="mb-0">
+                                    Door zelf dingen te bouwen, op die manier begrijp ik sneller waarom bepaalde keuzes gemaakt worden.
+                                </p>
+                            </div>
+
+                            <div class="p-4 text-bg-dark rounded-4 overflow-hidden flex-fill d-flex flex-column justify-content-around">
+                                <p class="label mb-0 text-center">Wat ik hieruit meeneem</p>
+                                <p class="mb-0">
+                                    Door met software en hardware bezig te zijn ontwikkel ik technische kennis die ik in al mijn projecten kan toepassen.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="mb-4 mb-lg-5">
+                <div class="p-4 p-md-5 text-bg-dark rounded-4 overflow-hidden">
+                    <p class="label mb-2">Overzicht</p>
+                    <h2 class="mb-4">Waar ik mij graag in verdiep</h2>
+
+                    <div class="table-responsive">
+                        <table class="table table-dark align-middle mb-0">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Domein</th>
+                                    <th scope="col">Wat mij aanspreekt</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>.NET &amp; software</td>
+                                    <td>Logische systemen, duidelijke architectuur, onderhoudbare code en performante toepassingen.</td>
+                                </tr>
+                                <tr>
+                                    <td>Webontwikkeling</td>
+                                    <td>Overzichtelijke interfaces, consistente componenten en een goede balans tussen design en structuur.</td>
+                                </tr>
+                                <tr>
+                                    <td>Unreal Engine</td>
+                                    <td>Gameplay systems, multiplayerlogica, combat, strategie en het technisch uitwerken van speelbare mechanics.</td>
+                                </tr>
+                                <tr>
+                                    <td>Hardware &amp; optimalisatie</td>
+                                    <td>Analyse van performantie, bottlenecks opsporen en systemen zo stabiel en efficiënt mogelijk afstellen.</td>
+                                </tr>
+                                <tr>
+                                    <td>Persoonlijke groei</td>
+                                    <td>Leren door te bouwen, iteratief verbeteren en ervaring omzetten in steeds sterkere projecten.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            <section class="mb-4 mb-lg-5">
+                <div class="p-4 p-md-5 text-bg-dark rounded-4 overflow-hidden">
+                    <p class="label mb-2">Visie</p>
+                    <h2 class="mb-4">Hoe ik naar projecten kijk</h2>
+
+                    <article class="mb-4">
+                        <h3 class="h4 mb-3 title">Een idee vertalen naar structuur</h3>
+                        <p>
+                            Wanneer ik aan een nieuw project begin, probeer ik eerst te begrijpen wat de kern van het idee is en welk doel
+                            het project moet bereiken. Vanuit dat uitgangspunt denk ik na over de structuur van het systeem en welke onderdelen
+                            daarvoor nodig zijn. Door eerst te focussen op logica en samenhang ontstaat er een duidelijk beeld van hoe het
+                            project moet worden opgebouwd.
+                        </p>
+                        <br>
+                        <p class="mb-0">
+                            In deze fase gaat het nog niet om code schrijven, maar om het begrijpen van het geheel. Welke systemen zijn nodig,
+                            hoe beïnvloeden ze elkaar en welke onderdelen vormen de basis van het project. Door dat overzicht te creëren wordt
+                            het later veel eenvoudiger om een stabiele en duidelijke implementatie te maken.
+                        </p>
+                    </article>
+
+                    <article class="mb-4">
+                        <h3 class="h4 mb-3 title">Van structuur naar implementatie</h3>
+                        <p>
+                            Zodra de structuur duidelijk is, start het echte ontwikkelproces. Hier wordt het ontwerp stap voor stap omgezet
+                            naar werkende systemen. Elk onderdeel krijgt zijn eigen plaats binnen het project en wordt opgebouwd zodat het
+                            correct samenwerkt met de rest van het geheel.
+                        </p>
+                        <br>
+                        <p class="mb-0">
+                            Tijdens deze fase probeer ik steeds overzicht te behouden. Code moet niet alleen werken, maar ook begrijpelijk
+                            blijven wanneer een project groeit. Door systemen logisch op te delen blijft het mogelijk om nieuwe onderdelen
+                            toe te voegen zonder dat bestaande delen onnodig complex worden.
+                        </p>
+                    </article>
+
+                    <article class="mb-4">
+                        <h3 class="h4 mb-3 title">Iteratie en verbetering</h3>
+                        <p>
+                            Ontwikkeling stopt niet wanneer iets voor de eerste keer werkt. Een project wordt sterker door het voortdurend
+                            te testen, te analyseren en te verbeteren. Kleine aanpassingen kunnen vaak een groot verschil maken in stabiliteit
+                            of gebruikservaring.
+                        </p>
+                        <br>
+                        <p class="mb-0">
+                            Door regelmatig te evalueren hoe een systeem functioneert, ontdek je waar optimalisaties mogelijk zijn. Soms
+                            betekent dat een systeem uitbreiden, soms betekent het dat een bestaande oplossing opnieuw wordt opgebouwd om
+                            efficiënter te werken.
+                        </p>
+                    </article>
+
+                    <article class="mb-4">
+                        <h3 class="h4 mb-3 title">Software en game development</h3>
+                        <p>
+                            Mijn interesse ligt zowel in softwareontwikkeling als in game development. Beide domeinen vragen een andere
+                            manier van denken, maar delen dezelfde technische basis: systemen moeten logisch opgebouwd zijn en betrouwbaar
+                            functioneren.
+                        </p>
+                        <br>
+                        <p class="mb-0">
+                            Bij softwareprojecten ligt de nadruk vaak op architectuur, data en structuur. In game development verschuift
+                            de focus meer naar gameplay systems, interacties en hoe verschillende mechanics samen een consistente ervaring
+                            vormen. Het combineren van die twee perspectieven helpt mij om projecten vanuit meerdere invalshoeken te bekijken.
+                        </p>
+                    </article>
+
+                    <article class="mb-4">
+                        <h3 class="h4 mb-3 title">Leren door te bouwen</h3>
+                        <p>
+                            Voor mij is ontwikkeling een continu proces van bouwen en bijleren. Nieuwe technologieën, frameworks en tools
+                            verschijnen voortdurend, waardoor er altijd nieuwe manieren zijn om problemen op te lossen of systemen te verbeteren.
+                        </p>
+                        <br>
+                        <p class="mb-0">
+                            Door actief projecten te maken en te analyseren hoe ze functioneren, ontwikkel ik mijn vaardigheden verder.
+                            Elk project levert nieuwe inzichten op die later opnieuw gebruikt kunnen worden in andere systemen of toepassingen.
+                        </p>
+                    </article>
+
+                    <article>
+                        <h3 class="h4 mb-3 title">Mijn aanpak in één zin</h3>
+                        <p class="mb-0">
+                            Uiteindelijk probeer ik projecten te bouwen die duidelijk gestructureerd zijn, technisch betrouwbaar werken en
+                            voldoende flexibiliteit hebben om verder te groeien wanneer nieuwe ideeën of uitbreidingen ontstaan.
+                        </p>
+                    </article>
+                </div>
+            </section>
         </div>
     </main>
 
     <footer id="footer" class="mt-auto"></footer>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     <script src="JS/App.js"></script>
+    
 </body>
 </html>
