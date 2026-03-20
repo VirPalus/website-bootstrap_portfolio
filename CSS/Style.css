@@ -5,14 +5,54 @@
     --accentColor: rgba(230, 175, 60, 1);
     --accentColorHover: rgba(230, 175, 60, 0.1);
     --thomasmoreColor: rgba(250, 100, 50, 1);
-    --DotNetColor: rgb(170, 90, 170);
+
+    --DotNetColor: rgba(108, 99, 255, 1);
+    --CSharpColor: rgba(155, 89, 182, 1);
+    --SqlColor: rgb(42, 187, 144);
     --UnrealColor: rgba(0, 160, 230, 1);
+    --HtmlColor: rgba(227, 79, 38, 1);
+    --CssColor: rgba(38, 77, 228, 1);
+    --JavaScriptColor: rgb(238, 188, 25);
+    --BootstrapColor: rgba(121, 82, 179, 1);
+
     --BackgroundColor: rgba(0, 0, 0, 0.35);
     --textColor: rgba(225, 225, 225, 1);
     --BorderColor: rgba(255, 255, 255, 0.07);
     --LineColor: rgba(255, 255, 255, 0.5);
     --drop: 0 10px 25px rgba(0, 0, 0, 0.6);
     --fontLogo: "Courier New", monospace, Helvetica, Arial, sans-serif;
+}
+
+.bg-dotNet{
+    background-color: var(--DotNetColor);
+}
+
+.bg-csharp{
+    background-color: var(--CSharpColor);
+}
+
+.bg-sql{
+    background-color: var(--SqlColor);
+}
+
+.bg-unreal{
+    background-color: var(--UnrealColor);
+}
+
+.bg-html{
+    background-color: var(--HtmlColor);
+}
+
+.bg-css{
+    background-color: var(--CssColor);
+}
+
+.bg-js{
+    background-color: var(--JavaScriptColor);
+}
+
+.bg-bs{
+    background-color: var(--BootstrapColor);
 }
 
 body{
@@ -130,10 +170,11 @@ hr{
 .btn-accent{
     display: inline-block;
     padding: .5rem 1rem;
-    border-radius: 0.5rem;
+    border-radius: 1rem;
     border: solid 2px var(--accentColor);
     color: var(--accentColor);
     transition: background-color .2s ease;
+    background-color: transparent;
 }
 
 .btn-accent:hover{
@@ -154,12 +195,7 @@ hr{
     --bs-gutter-x: 3rem;
 }
 
-.card-fixed-img{
-    width: 100%;
-    height: 150px;
-    object-fit: cover;
-    object-position: center;
-}
+
 
 .title{
     color: var(--accentColor);
@@ -174,11 +210,47 @@ hr{
   font-weight: 300;
 }
 
+.form-control,
+.form-select{
+    background-color:var(--BackgroundColor);
+    color: var(--textColor)!important;
+    border: 1px solid var(--BorderColor);
+    border-radius: 1rem;
+    height: 3rem;
+}
+
+.form-control:focus,
+.form-select:focus{
+    background-color: var(--BackgroundColor);
+    border-color: var(--accentColor);
+    box-shadow:none;
+}
+
+.form-control::placeholder{
+    color: var(--Gray);
+    opacity: 1;
+}
+
+.form-select option{
+    background-color: var(--Black);
+    color: var(--textColor);
+}
+
+textarea.form-control{
+    resize: vertical;
+    min-height: 180px;
+}
+
+.h-fc{
+    height: fit-content;
+}
+
+
 .contact-line{
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    margin: 0 0 0.5rem 0; 
+    margin: 0 0 0.5rem 0;
 }
 
 footer{
