@@ -64,6 +64,16 @@ const oefeningen = [
         beschrijving: "Schrijf een programma dat de gebruiker vraagt om woorden in te geven.\nDeze woorden steek je in een lijst.\n\nPrint daarna het kortste woord.\nPrint ook het langste woord.\n\nPrint vervolgens de som af van de posities van het kortste en het langste woord in de lijst.",
         code: "TXT/DotNet/collecties.txt",
     },
+    {
+        type: "Methodes",
+        beschrijving: "Lees de familie- en voornaam van de gebruiker in.\nControleer dat de invoer ingevuld is.\n\nLees de hobby van de gebruiker in aan de hand van het bijhorende nummer.\nVervolgens krijgt de gebruiker opnieuw de optie om een hobby in te geven.\nDit blijft gebeuren tot de gebruiker een 8 ingeeft.\n\nHierna wordt een lijst aan suggesties voor tijdschriften getoond.\nGebruik hiervoor onderstaande tabel.",
+        code: "TXT/DotNet/methodes.txt",
+    },
+    {
+        type: "Readers",
+        beschrijving: "Lees de naam van een bestand in.\nIn dit bestand vind je op elke rij getallen gescheiden door een ;.\nBereken voor elke verticale rij het totaal en toon dit aan de gebruiker.\n\nOpmerking: er zijn in elke horizontale rij altijd evenveel getallen als dat er rijen zijn.\n\nVoorbeeld van een bestand:\n1;2;3\n6;7;8\n12;0;3\n\nVerwachte output:\n19,9,14",
+        code: "TXT/DotNet/readers.txt",
+    },
 ];
 
 const container = document.getElementById("dotnetOefeningen");

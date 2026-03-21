@@ -1,0 +1,82 @@
+// <[ Methods ]>
+List<string> LeesGetallenIn()
+{
+    List<string> getallen = [];
+    string pad;
+
+    Console.Write("Geef een pad: ");
+    pad = Console.ReadLine() ?? string.Empty;
+
+    if (File.Exists(pad))
+    {
+        using StreamReader reader = new(pad);
+        while (!reader.EndOfStream)
+        {
+            getallen.Add(reader.ReadLine() ?? string.Empty);
+        }
+    }
+    else
+    {
+        Console.WriteLine($"{pad} is geen geldig pad.");
+        return getallen;
+    }
+
+    return getallen;
+}
+
+List<int> MaakKolomLijst(List<string> lijst, int kolomNr)
+{
+    List<int> kolomLijst = [];
+
+    foreach (var item in lijst)
+    {
+        string[] regel = [];
+        regel = item.Split(";");
+
+        kolomLijst.Add(Convert.ToInt16(regel[kolomNr]));
+    }
+
+    return kolomLijst;
+}
+
+void Print(List<string> stringListGetallen)
+{
+    for (int i = 0; i < stringListGetallen.Count; i++)
+    {   
+        List<int> kolom = [];
+        int som = 0;
+
+        kolom = MaakKolomLijst(stringListGetallen, i);
+        foreach (var item in kolom)
+        {
+            som += item;
+        }
+
+        if (isLaatsteGetal(i, stringListGetallen))
+        {
+            Console.Write($"{som},");
+        }
+        else
+        {
+            Console.Write($"{som}");
+        }
+    }
+}
+
+bool isLaatsteGetal(int index, List<string> stringListGetallen)
+{
+    return index + 1 < stringListGetallen.Count;
+}
+
+// <[ Main Variable Declaration ]>
+List<string> stringListGetallen = [];
+
+// <[ Main Variable Initialization ]>
+
+
+// <[ Main Program ]>
+
+stringListGetallen = LeesGetallenIn();
+Print(stringListGetallen );
+
+Console.ReadLine();

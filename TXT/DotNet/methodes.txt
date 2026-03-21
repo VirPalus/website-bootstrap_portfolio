@@ -1,0 +1,74 @@
+// <[ Methods ]>
+string ReadName(string prompt)
+{
+    string input;
+
+    do
+    {
+        Console.Write(prompt);
+        input = Console.ReadLine();
+    } while (string.IsNullOrWhiteSpace(input));
+
+    return input;
+}
+
+int ReadHobby(int min, int max)
+{
+    string input;
+    int getal = 0;
+
+    do
+    {
+        Console.Write($"Geef een getal tussen {min} en {max}: ");
+        input = Console.ReadLine();
+    } while (!(int.TryParse(input, out getal) && getal >= min && getal <= max));
+
+    return getal;
+}
+
+void RecommendBooks(List<int> hobbies)
+{
+    List<string> tijdschriften = ["Anna", "Knippie", "VtWonen", "Voetbal Wereld", "Op Pad", "Zoom NL", "Runners"];
+
+    if (hobbies.Count >=1 )
+    {
+        foreach (var item in hobbies)
+        {
+            if (item !=8)
+            {
+                Console.WriteLine($@"Wij raden ""{tijdschriften[item -1]}"" aan.");
+            }
+            else
+            {
+                Console.WriteLine("Wij raden niets aan.");
+            }
+        }
+    }
+    else
+    {
+        Console.WriteLine("Wij raden niets aan.");
+    }
+
+}
+
+// <[ Main Variable Declaration ]>
+string voornaam, achternaam;
+int getal;
+List<int> hobbies = [];
+
+// <[ Main Variable Initialization ]>
+getal = 0;
+
+// <[ Main Program ]>
+voornaam = ReadName("Geef voornaam: ");
+achternaam = ReadName("Geef achternaam: ");
+
+while (getal != 8)
+{
+    getal = ReadHobby(1, 8);
+    hobbies.Add(getal);
+}
+
+
+RecommendBooks(hobbies);
+Console.ReadLine();
