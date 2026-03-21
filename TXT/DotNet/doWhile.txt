@@ -1,0 +1,40 @@
+string input;
+int pijlen, hit, totaal;
+
+pijlen = 3;
+totaal = 0;
+
+
+for (int i = 1; i <= pijlen; i++)
+{
+    do
+    {
+        Console.Write("hit: ");
+        input = Console.ReadLine();
+    } while (!(int.TryParse(input, out hit) && hit > 0 && hit <= 4));
+
+    switch (hit)
+    {
+        case 1:
+            totaal += 0;
+        break;
+        case 2:
+            totaal += 20;
+        break;
+        case 3:
+            totaal += 50;
+        break;
+        case 4:
+            totaal += 100;
+        break;
+        default:
+        Console.WriteLine("ERROR");
+        break;
+    }
+}
+
+
+Console.WriteLine($"U hebt {totaal} punten behaald");
+
+Console.ReadLine();
+

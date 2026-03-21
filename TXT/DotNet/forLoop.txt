@@ -1,0 +1,34 @@
+char s1, s2;
+int aantal, hoeveel;
+
+
+Console.Write("Symbolen 1: ");
+s1 = Convert.ToChar((Console.ReadLine() ?? ""));
+
+Console.Write("Symbolen 2: ");
+s2 = Convert.ToChar((Console.ReadLine() ?? ""));
+
+Console.Write("Aantal: ");
+aantal = Convert.ToInt16(Console.ReadLine());
+
+Console.Write("Hoeveel: ");
+hoeveel = Convert.ToInt16(Console.ReadLine());
+
+for (int i = 0 ; i < aantal; i++)
+{
+   for (int j = 0 ; j < hoeveel; j++)
+    {
+        if(i % 2 == 0)
+        {
+            Console.Write(s1);
+        }
+        else
+        {
+            Console.Write(s2);
+        }
+
+    }
+    Console.WriteLine("");
+}
+
+Console.ReadLine();

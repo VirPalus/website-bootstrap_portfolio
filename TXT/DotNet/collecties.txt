@@ -1,0 +1,38 @@
+string input;
+List<string> woorden = [];
+
+while (true)
+{
+    Console.Write("Geef een woord: ");
+    input = Console.ReadLine();
+
+    if (string.IsNullOrWhiteSpace(input))
+    {
+        string langste = woorden[0];
+        string kortste = woorden[0];
+
+        for (int i = 0; i < woorden.Count; i++)
+        {
+            if (woorden[i].Length > langste.Length)
+            {
+                langste = woorden[i];
+            }
+
+            if (woorden[i].Length < kortste.Length)
+            {
+                kortste = woorden[i];
+            }
+        }
+
+        Console.WriteLine($"{langste}");
+        Console.WriteLine($"{kortste}");
+        Console.WriteLine($"{woorden.IndexOf(langste) + woorden.IndexOf(kortste)}");
+        break;
+    }
+    else
+    {
+        woorden.Add(input);
+    }
+}
+
+Console.ReadLine();

@@ -1,0 +1,10 @@
+int getal;
+
+Console.Write("Getal: ");
+getal = Convert.ToInt16(Console.ReadLine());
+
+Console.WriteLine((getal - 1) * (getal - 1 ));
+Console.WriteLine(getal * getal);
+Console.WriteLine((getal + 1) * (getal + 1 ));
+
+Console.ReadLine();

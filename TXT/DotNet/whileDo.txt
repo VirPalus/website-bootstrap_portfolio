@@ -1,0 +1,25 @@
+string input;
+int tafel;
+
+while (true)
+{
+    do
+    {
+        Console.Write("Tafel: ");
+        input = Console.ReadLine();
+    } while (!(int.TryParse(input, out tafel)));
+
+    if (tafel != 0)
+    {
+        for (int i = 1; i <= 10; i++)
+        {
+            Console.WriteLine($"{i} x {tafel} = {i * tafel}");
+        }
+    }
+    else
+    {
+        break;
+    }
+}
+
+Console.ReadLine();
